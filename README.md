@@ -1,12 +1,31 @@
-# Getting Started with Create React App
+# Ethereum Transactions Crawler
+This is a simple React based app to pull transactions from Ethereum network using https://etherscan.io/apis.
+
+Application that will allow a user to view transaction data from the Ethereum blockchain associated with a specific wallet address W that the user inputs, starting with block B.
+The application gets information on:
+  - wallets (addresses) and
+  - amounts of ETH associated with transactions made to and from the given wallet W and
+  - show them in a simple human-readable way.
+  - collect and display ALL transaction data starting from the given block B.
+
+## Used Stacks:
+- React
+- Etherscan API: https://etherscan.io/apis
+- Moment
+
+## Run project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+And using Node version 16.
+Run `npm install` to setup all dependencies and run `npm start` to start the app.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Available Scripts
+
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +33,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -39,7 +58,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
