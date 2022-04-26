@@ -16,9 +16,10 @@ The application gets information on:
 ## Run project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-And using Node version 16.
-Run `npm install` to setup all dependencies and run `npm start` to start the app.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+- Use node version 16.
+- Run `npm install` to setup all dependencies and run `npm start` to start the app.
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ### Available Scripts
