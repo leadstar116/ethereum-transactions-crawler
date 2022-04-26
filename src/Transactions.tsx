@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import moment from "moment";
 
 const apiUrl = "https://api.etherscan.io/api";
 const convertWeiToEth = (value: number) => {
@@ -72,7 +73,7 @@ export const Transactions = (props: TransactionsProp) => {
               <tr>
                 <td>{trx.blockHash}</td>
                 <td>{trx.blockNumber}</td>
-                <td>{trx.timeStamp}</td>
+                <td>{moment.unix(parseInt(trx.timeStamp)).fromNow()}</td>
                 <td>{trx.from}</td>
                 <td>{trx.to ? trx.to : trx.contractAddress ? 'Contract Creation' : ''}</td>
                 <td>{convertWeiToEth(parseFloat(trx.value))}</td>
